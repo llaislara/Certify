@@ -1,0 +1,133 @@
+.promoterBox{
+  margin-top: 5.5%;
+}
+
+.promoterBoxAdd{
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.promoterTitle{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 4%;
+  gap: 1%;
+}
+
+hr{
+  border: 0.4px solid rgba(0, 0, 0, 0.081);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+}
+
+.promoterTitle button{
+  height: 0px;
+  display: flex;
+  background-color: #656566b0;
+  border-radius: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 50px !important;
+  margin-bottom: 10px;
+}
+
+.promoterBoxAdd button, .buttonAddPromoters{
+  background-color: transparent;
+}
+
+.buttonAddPromoters{
+  width: 35px;
+  height: 35px;
+  margin: 10px 0;
+  transition: 3s;
+}
+
+.buttonAddPromoters:hover{
+  transform: rotate(360deg);
+}
+
+.promoterBoxAdd input[type="text"] {
+  margin-right: 10px;
+}
+
+.uploadFiles {
+  display: flex;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 20vh;
+  flex-direction: row;
+  align-content: center;
+  align-items: flex-end;
+}
+
+.uploadFiles p{
+  color: #3537513d;
+  font-size: 100%;
+  font-weight: 600;
+  margin-top: -5px;
+  width: max-content;
+}
+
+.uploadFiles input[type="file"] {
+  display: none;
+}
+
+
+.uploadFile{
+  display: flex;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 20vh;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.promotersSVG {
+  width: 10px; 
+  transition: 1s;
+}
+
+.logoUpload{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-left: 7%;
+}
+
+.miniatureLogo{
+  display: flex;
+  align-items: flex-end;
+  gap: 5%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.promoterBoxAdd input {
+  width: 100% !important;
+}
+
+.promoterBoxAdd input[type="text"]:focus {
+  outline: none; 
+}
+  
+@media (max-width: 768px) {
+
+  .logoUpload {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-left: 7%;
+}
+
+}

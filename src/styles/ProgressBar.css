@@ -1,0 +1,47 @@
+/* src/components/ProgressBar.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.progress-bar {
+  font-family: "Poppins", sans-serif;
+  width: 20%;
+  background-color: #ebebeb;
+  box-shadow: inset 0px 0px 3px 3px rgb(0 0 0 / 5%);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: #000000a4;
+}
+
+.progress {
+  height: 15px;
+  background: linear-gradient(-90deg, rgb(12 195 216) 0%, rgb(151 138 240) 100%);
+  transition: width 0.5s;
+}
+
+.steps {
+  height: 100%;
+  padding: 3.5vh;
+  background-color: #f7f7f7;
+  box-shadow: inset 0px 0px 3px 3px rgb(0 0 0 / 5%);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  padding-inline: 2%; 
+}
+
+.step.active {
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .progress-bar {
+    display: none;
+  }
+}

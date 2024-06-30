@@ -1,0 +1,336 @@
+/* src/components/CertificatePreview.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.certificate-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.certificate-preview {
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.certificado-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.participant {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.signature-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signature-image {
+  width: 150px;
+  height: auto;
+}
+
+.signature-line {
+  width: 150px;
+  margin: 10px auto;
+}
+
+.signature-name,
+.signature-title {
+  font-size: 1em;
+}
+
+.logo-top {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.logo-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+}
+  
+.certificate-preview-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificate-preview {
+  border-radius: 9px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  text-align: center;
+  width: 535.333px;
+  height: 368.333px;
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 48%);
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleLabelPreview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000a4;
+  margin-bottom: 4%;
+}
+
+.certificado-title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 35px;
+  font-family: 'arial', sans-serif;
+}
+
+.certificado-title h1{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.titleQR{
+  display: flex;
+  width: calc(100% / 3);
+  gap: 35%;
+}
+
+.qr-code { 
+  width: 60px;
+  height: 60px;
+  border: 4px solid #ffff; 
+  border-radius: 10px;
+}
+
+.participant {
+  position: absolute;
+  top: 104px;
+  width: 83%;
+  text-align: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'arial', sans-serif;
+}
+
+.textCertificatePreview{
+  width: 95%;
+  font-size: 11px;
+}
+
+.participantMiddle{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.signatures-container{
+  display: flex;
+  gap: 12%;
+  margin-bottom: 9%;
+  justify-content: center;
+}
+
+.signature-container {
+  width: 100%;
+  display: flex;
+  margin-top: 15%;
+  gap: 4%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signature-image {
+  width: 45px;
+  height: auto;
+}
+
+.signature-name {
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.signature-title {
+  font-size: 8px;
+  margin-top: -10px;
+}
+
+.logo-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 20px;
+}
+
+.event-logo {
+  width: 56px;
+    height: auto;
+    margin: 0px 4px;
+    margin-bottom: 7px;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.post-download-buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+
+.post-download-buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post-reload-buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  padding-bottom: 3%;
+}
+.previewButton{
+  display: flex;
+  background: linear-gradient(-90deg, rgba(23,206,227,1) 0%, rgba(49,187,226,1) 20%, rgba(87,169,227,1) 49%, rgb(113, 147, 243) 77%, #9f95e8 100%);
+  width: 20%;
+  height: 35px;
+  border-radius: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 3%;
+  transition: 0.3s;
+}
+
+.previewButton svg, .previewButtonRestart svg{
+  max-width: 15px;
+}
+
+.previewButtonRestart{
+  display: flex;
+  background-color: #bfbfbf00;
+  border: 1px solid #5250509d;
+  color: #5250509d;
+  width: 20%;
+  height: 35px;
+  border-radius: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 3%;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.previewButton:hover, .previewButtonRestart:hover{
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .titleLabelPreview {
+    font-size: 1em;
+    margin-top: 11%;
+  }
+  
+  .certificate-preview{
+    width: 178.444333333px;
+    height: 113.777667px;
+  }
+
+  .certificado-title {
+    font-size: 9px;
+    margin-top: 0px;
+  }
+
+  .titleQR{
+    height: 0;
+  }
+
+  .qr-code {
+    width: 20px;
+    height: 20px;
+    margin-top: -14px;
+    border-radius: 2px;
+  }
+
+  .textCertificatePreview {
+    width: auto;
+    font-size: 3px;
+    margin-top: 10%;
+  }
+
+  .participantMiddle {
+    font-size: 5px;
+  }
+
+  .signature-image {
+    width: 14px;
+  }
+
+  .signature-name {
+    font-size: 5px;
+  }
+
+  .signature-title {
+    font-size: 3px;
+    margin-top: -5px;
+  }
+
+  .event-logo{
+    width: 18px;
+    margin: 0;
+  }
+
+  .previewButtonRestart, .previewButton {
+    width: 50%;
+    border-radius: 40px;
+    margin-top: 4%;
+    padding: 18px;
+    font-size: 10px;
+  }
+}
+ 
+
+
+.restart-button:hover {
+  background-color: #ff1a1a;
+}
+

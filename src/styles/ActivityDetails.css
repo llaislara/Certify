@@ -1,0 +1,138 @@
+.detailsEventBox{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;  
+}
+  
+.boxOptionsEvent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+  
+.titleLabel {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000000a4;
+  margin-bottom: 1px;
+  display: block;
+}
+
+.eventName{
+  margin-top: 4%;
+}
+
+.eventName input, .placeEvent input, .linkQRCode input{
+  width: 98% !important;
+}
+
+.label input[type="text"],
+.label select,
+.inputDate {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.label input[type="text"]:focus,
+.label select:focus,
+.inputDate:focus {
+  border-color: #353751;
+  outline: none;
+}
+
+
+.boxDetailsEvent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.durationEvent {
+  display: flex;
+  flex-direction: column;
+}
+
+.durationEvent label {
+  display: flex;
+  gap: 4%;
+  margin-top: 0px;
+  align-items: center;
+}
+
+.dateButton {
+  background-color: transparent;
+  height: 35px;
+  padding: 0;
+}
+
+.dateButton img {
+  height: 35px;
+  transition: 3s;
+}
+
+.dateButton img:hover {
+  transform: rotate(360deg);
+}
+
+.react-datepicker-popper {
+  z-index: 2;
+}
+
+.react-datepicker {
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 3px 2px rgba(54, 54, 54, 0.222);
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background: linear-gradient(-90deg, rgba(23,206,227,1) 0%, rgba(49,187,226,1) 20%, rgba(87,169,227,1) 49%, rgb(113, 147, 243) 77%, #9f95e8 100%);
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: #9f95e8;
+  color: white;
+}
+
+.eventName input[type="text"]:focus,
+.placeEvent input[type="text"]:focus,
+.linkQRCode input[type="text"]:focus,
+.durationEvent:focus,
+.typeEvent select:focus,
+.participationMode select:focus {
+  outline: none; 
+}
+
+.typeEvent select:focus,
+.participationMode select:focus,
+.durationEvent select:focus {
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  input[type="text"]:required, 
+  select:required {
+    width: 100%;
+  }
+
+  input[type="date"]:required {
+    width: 15%
+  }
+  .boxOptionsEvent,.boxDetailsEvent {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+
+  input[type="date"]:required {
+    width: 35%
+  }
+
+}

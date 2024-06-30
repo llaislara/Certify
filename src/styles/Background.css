@@ -1,0 +1,109 @@
+.options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+    gap: 3%;
+}
+  
+.background-select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.option img {
+  width: min(15vh, 15vh);
+  height: min(10vh, 10vh);
+  box-shadow: 0px 0px 1.99px 2px rgb(0 0 0 / 7%);
+}
+  
+.background-select .selected {
+  cursor: pointer;
+}
+  
+.background-select .selected img {
+  object-fit: cover;
+}
+  
+.labelBackground {
+  display: flex;
+  margin-bottom: 15px;
+  font-weight: bold;
+  margin-top: 5vh;
+  align-items: center;
+}
+
+.labelBackground p{
+  color: #5250509d;
+  font-weight: 500;
+}
+
+.BoxStep input[type="checkbox"] {
+  appearance: none;
+  background: #f3f3f3;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #6995c4e7;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+  
+.BoxStep input[type="checkbox"]:checked {
+  background-color: #6995c4e7; 
+  border: 1px solid #6995c4e7;
+}
+
+.custom-file-input {
+  display: none;
+}
+
+.custom-file-label {
+  display: inline-block;
+  background-color: #2fd5c3;
+  color: #ebebeb;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+.custom-file-label:hover {
+  background-color: #40abf7;
+}
+
+#file-name {
+  margin-left: 20px;
+  color: #555;
+}
+
+.buttonAddBackground{ 
+  background-color: transparent;
+  width: 12vh;
+}
+
+.miniatureLogoBackground{
+  display: flex;
+  align-items: flex-end;
+}
+
+  
+  
+@media (max-width: 768px) {
+  .options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .background-select {
+    flex-direction: column;
+  }
+
+  .option img {
+    width: 100%;
+  }
+  .labelBackground {
+    margin-top: 17vh;
+}
+}

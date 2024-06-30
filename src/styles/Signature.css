@@ -1,0 +1,91 @@
+
+
+.boxSignature{
+  margin-top: 5.5%;
+}
+
+.boxSignatureItens{
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.inputSignature{
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  justify-content: center;
+}
+
+.inputSignature p{
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  color: #353751;
+}
+
+.removeSignature{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttonSignature{
+  display: flex;
+  background-color: transparent;
+  height: min(30px, 30px);
+  border-radius: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: 3s;
+}
+
+.buttonAddSignature img{
+  transition: 3s;
+}
+
+.buttonAddSignature img:hover{
+  transform: rotate(360deg);
+}
+
+.buttonAddSignature{
+  display: flex;
+  background-color: transparent;
+  padding: 0;
+}
+
+.signatureSVG {
+  width: 10px; 
+  transition: 1s;
+}
+
+.inputSignature input[type="file"] {
+  display: flex;
+}
+
+.svgSignature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.svgSignature p{
+  width: 20vh;
+  color: #3537513d;
+  font-size: 90%;
+  font-weight: 600;
+  margin-top: -5px;
+}
+.miniatureSignature{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  padding-right: 13%;
+}
+
+.boxSignatureItens input[type="text"]:focus {
+  outline: none; 
+}
