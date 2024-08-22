@@ -335,9 +335,10 @@
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .landing-page {
     padding-top: 45%;
+    margin-top: 10%;
     padding-bottom: 55%;
     overflow: hidden;
   }

@@ -57,12 +57,12 @@ function App() {
     eventName: '',
     eventDuration: '',
     durationUnit: 'hours',
-    participationMode: 'Audience',
+    participationMode: 'audience',
     customParticipationMode: '',
     eventLocation: '',
-    eventType: 'Academic League',
+    eventType: 'academic league',
     customEventType: '',
-    eventCondition: 'Seminário',
+    eventCondition: 'seminar',
     eventPromoters: [''],
     eventStartDate: '',
     eventEndDate: '',
@@ -276,7 +276,7 @@ function App() {
       const eventDates = formData.eventEndDate ? `between ${formatDate(formData.eventStartDate)} and ${formatDate(formData.eventEndDate)}` : `in ${formatDate(formData.eventStartDate)}`;
 
       const certificateText1 = 'We certify that ';
-      const certificateText2 = `participated in the ${formData.eventName} as ${formData.customParticipationMode || formData.participationMode}, a ${formData.customEventType || formData.eventType} promoted by the ${eventPromoters}, carried out  ${eventDates}, totaling ${formData.eventDuration} ${formData.durationUnit} of participation.`;
+      const certificateText2 = `participated in the ${formData.eventName} as ${formData.customParticipationMode || formData.participationMode}, a ${formData.customEventType || formData.eventType} promoted by the ${eventPromoters}, carried out ${eventDates}, totaling ${formData.eventDuration} ${formData.durationUnit} of participation.`;
 
       const textX = 800;
       const textY = 320;

@@ -44,6 +44,15 @@ const CertificatePreview = ({ data }) => {
   const backgroundImage = data.customBackground ? URL.createObjectURL(data.customBackground) : backgrounds[data.backgroundImage];
   const name = names[0];
 
+  const formatEventPromoters = (promoters) => {
+    if (promoters.length > 1) {
+      return promoters.slice(0, -1).join(', ') + ' and ' + promoters[promoters.length - 1];
+    }
+    return promoters[0];
+  };
+
+  const eventPromoters = formatEventPromoters(data.eventPromoters);
+
   return (
     <div className= "previewContainer">
       <div className="certificate-preview-container">
@@ -67,9 +76,9 @@ const CertificatePreview = ({ data }) => {
             </p>
 
             <p className="participantBottom">
-              participated in the {data.eventName} as {data.participationMode}, a {data.eventType} promoted by the {data.eventPromoters.join(', ')}, carried out in {data.eventEndDate ? `de ${formatDate(data.eventStartDate)} a ${formatDate(data.eventEndDate)}` : `no dia ${formatDate(data.eventStartDate)}`}
-
-              {data.eventType} intitulado "{data.eventName}" na qualidade de {data.participationMode}, promovido pelo {data.eventPromoters.join(', ')} {data.eventEndDate ? `de ${formatDate(data.eventStartDate)} a ${formatDate(data.eventEndDate)}` : `no dia ${formatDate(data.eventStartDate)}`}, perfazendo uma carga horária de {data.eventDuration} {data.durationUnit}.
+              participated in the {data.eventName} as {data.participationMode}, a {data.eventType} promoted by the {eventPromoters}, 
+              carried out {data.eventEndDate ? `between ${formatDate(data.eventStartDate)} and ${formatDate(data.eventEndDate)}` : `in ${formatDate(data.eventStartDate)}`}, 
+              totaling {data.eventDuration} {data.durationUnit} of participation.
             </p>
           </div>
 

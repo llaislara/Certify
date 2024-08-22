@@ -104,6 +104,15 @@ const ActivityDetails = ({ formData, handleChange, nextStep, prevStep, toggleEnd
                 <option value="presenter">Presenter</option>
                 <option value="speaker">Speaker</option>
                 <option value="workshop Facilitator">Workshop Facilitator</option>
+                <option value="chair">Chair</option>
+                <option value="vice-chair">Vice-Chair</option>
+                <option value="member">Member</option>
+                <option value="project leader">Project Leader</option>
+                <option value="marketing director">Marketing Director</option>
+                <option value="secretary">Secretary</option>
+                <option value="treasurer">Treasurer</option>
+                <option value="webmaster">Webmaster</option>
+                <option value="monitor">Monitor</option>
               </select>
             </label>
           </div>

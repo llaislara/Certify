@@ -14,7 +14,7 @@ const Preview = ({ formData, downloadCertificates, prevStep, restartApp, missing
 
       {missingFields.length > 0 && (
         <div className="error">
-          <h3>Erro: Campos obrigatórios não preenchidos:</h3>
+          <h3>Error: Mandatory fields not filled in:</h3>
           <ul>
             {missingFields.map((field, index) => (
               <li key={index}>{field}</li>
